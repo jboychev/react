@@ -1,10 +1,13 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import Counter from "./Components/counter";
+import Card from "./Components/Card";
 
-function Header() {
-  return <h1>Hello React</h1>;
-}
+// function Header() {
+//   return <h1>Hello React</h1>;
+// }
+
+const randNum = () => Math.floor(Math.random() * 100);
 
 function App() {
   // return (
@@ -13,7 +16,15 @@ function App() {
   //     <Counter />
   //   </div>
   // );
-  return <Header />;
+  // return <Header />;
+
+  return (
+    <div className="appWrapper">
+      <Card num={randNum()} />
+      <Card num={randNum()} />
+      <Card num={randNum()} />
+    </div>
+  )
 }
 
 export default App;
