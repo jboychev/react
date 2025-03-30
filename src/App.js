@@ -26,7 +26,7 @@ function App() {
       </div>
       <Btn />
       <p>
-      <button onClick={handleClick}>Click me for a number</button>
+      <button onClick={handleClick}>Guess the number between 1 and 3</button>
       </p>
     </div>
   );
